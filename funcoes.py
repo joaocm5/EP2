@@ -7,14 +7,14 @@ def rolar_dados(numero):
     return dados
 
 #exercicio 2
-def guardar_dado(dados_rolados, estoque, dado_a_guardar):
-    rolados_tirando_guardado = []
-
-    for dado in dados_rolados:
-        if dado == dado_a_guardar:
-            estoque.append(dado)
+def guardar_dado(dados_rolados, dados_no_estoque, dado_para_guardar):
+    novo_rolados = []
+    
+    for i in range(len(dados_rolados)):
+        if i == dado_para_guardar:
+            dados_no_estoque.append(dados_rolados[i])
         else:
-            rolados_tirando_guardado.append(dado)
-
-    return [rolados_tirando_guardado, estoque]
+            novo_rolados.append(dados_rolados[i])
+    
+    return [novo_rolados, dados_no_estoque]
     
