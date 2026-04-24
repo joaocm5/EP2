@@ -17,7 +17,7 @@ def guardar_dado(dados_rolados, dados_no_estoque, dado_para_guardar):
             novo_rolados.append(dados_rolados[i])
     
     return [novo_rolados, dados_no_estoque]
-    
+#ex 3
 def remover_dado(dados_rolados, dados_no_estoque, dado_para_remover):
     novo_estoque = []
 
@@ -31,7 +31,7 @@ def remover_dado(dados_rolados, dados_no_estoque, dado_para_remover):
             novo_estoque.append(dados_no_estoque[i])
     
     return [dados_rolados, novo_estoque]
-
+#ex 4
 def calcula_pontos_regra_simples(lista):
     dicio = {}
     dicio[1] = 0
@@ -54,10 +54,19 @@ def calcula_pontos_regra_simples(lista):
         elif numero == 6:
             dicio[6] += 6
     return dicio
-
+#ex 5
 def calcula_pontos_soma(lista):
     soma = 0
     for numero in lista:
         soma += numero
     return soma
-
+#ex 6
+def calcula_pontos_sequencia_baixa(lista):
+    if 1 in lista and 2 in lista and 3 in lista and 4 in lista:
+        return 15
+    elif 5 in lista and 2 in lista and 3 in lista and 4 in lista:
+        return 15
+    elif 5 in lista and 6 in lista and 3 in lista and 4 in lista:
+        return 15
+    else:
+        return 0
