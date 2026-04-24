@@ -31,3 +31,28 @@ def remover_dado(dados_rolados, dados_no_estoque, dado_para_remover):
             novo_estoque.append(dados_no_estoque[i])
     
     return [dados_rolados, novo_estoque]
+
+def calcula_pontos_regra_simples(lista):
+    dicio = {}
+    dicio[1] = 0
+    dicio[2] = 0
+    dicio[3] =0
+    dicio[4] =0
+    dicio[5] =0
+    dicio[6] =0
+    for numero in lista:
+        if numero == 1:
+            dicio[1] += 1
+        elif numero == 2:
+            dicio[2] += 2
+        elif numero == 3:
+            dicio[3] += 3
+        elif numero == 4:
+            dicio[4] += 4
+        elif numero == 5:
+            dicio[5] += 5
+        elif numero == 6:
+            dicio[6] += 6
+    return dicio
+
+
