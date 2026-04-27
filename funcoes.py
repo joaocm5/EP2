@@ -70,3 +70,12 @@ def calcula_pontos_sequencia_baixa(lista):
         return 15
     else:
         return 0
+
+#ex7
+def calcula_pontos_sequencia_alta(lista):
+    if 1 in lista and 2 in lista and 3 in lista and 4 in lista and 5 in lista:
+        return 30
+    elif 5 in lista and 2 in lista and 3 in lista and 4 in lista and 6 in lista:
+        return 30
+    else:
+        return 0
