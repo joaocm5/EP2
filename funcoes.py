@@ -103,4 +103,26 @@ def calcula_pontos_full_house(lista):
             return 0
 
     return int(soma/2)
+#ex9
+def calcula_pontos_quadra(lista):
+    soma = 0
+    dicio = {}
+    tem4 = False
 
+    for numero in lista:
+        if numero in dicio:
+            dicio[numero] += 1
+        else:
+            dicio[numero] = 1
+        
+    for quantidade in dicio.values():
+        if quantidade >= 4:
+            tem4 = True
+    
+    if tem4 == False:
+        return 0
+    else:
+        for dado, valor in dicio.items():
+            soma += valor*dado
+    return soma
+    
