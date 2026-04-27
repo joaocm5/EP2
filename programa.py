@@ -11,7 +11,7 @@ cartela = {
         'cinco_iguais': -1
     }
 }
- 
+
 imprime_cartela(cartela)
 
 for i in range(12):
