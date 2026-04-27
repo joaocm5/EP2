@@ -125,4 +125,23 @@ def calcula_pontos_quadra(lista):
         for dado, valor in dicio.items():
             soma += valor*dado
     return soma
+
+#ex10
+def calcula_pontos_quina(lista):
+    dicio = {}
+    tem = False
+
+    for numero in lista:
+        if numero in dicio:
+            dicio[numero] += 1
+        else:
+            dicio[numero] = 1
+        
+    for quantidade in dicio.values():
+        if quantidade >= 5:
+            tem = True
     
+    if tem == False:
+        return 0
+    else:
+        return 50
