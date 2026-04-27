@@ -169,6 +169,7 @@ def faz_jogada(lista, categoria, dicio):
 
     return dicio
 
+
 def imprime_cartela(cartela):
     print("Cartela de Pontos:")
     print("-"*25)    
